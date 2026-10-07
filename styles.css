@@ -282,3 +282,12 @@
  .drive-content h2{font-size:clamp(42px,11vw,48px)}
 }
 @media(prefers-reduced-motion:reduce){.hero-route-line span{animation:none;left:50%}}
+
+/* Rótulos discretos para a linha de percurso da hero. */
+.hero-route-label{font-size:8px;letter-spacing:.19em;color:rgba(230,244,246,.74)}
+.hero-route-label i{font-size:7px;letter-spacing:.12em}
+.hero-route-line .hero-route-dot{position:absolute;top:50%;left:0;width:8px;height:8px;border-radius:50%;background:#70f4ff;box-shadow:0 0 8px #25dce7,0 0 20px rgba(37,220,231,.8);transform:translateY(-50%);animation:hero-line-travel 28s linear infinite,hero-line-pulse 2.4s ease-in-out infinite}
+.hero-route-line .hero-route-destination{position:absolute;right:max(22px,4vw);top:50%;transform:translateY(-50%);font-size:8px;letter-spacing:.19em;text-transform:uppercase;color:rgba(230,244,246,.78)}
+@media(max-width:640px){.hero-route-label{font-size:7px}.hero-route-label i{font-size:6px}.hero-route-line .hero-route-destination{right:18px;font-size:7px}}
+@media(prefers-reduced-motion:reduce){.hero-route-line .hero-route-dot{animation:none;left:50%}}
+.hero-route-line .hero-route-destination{left:auto;width:auto;height:auto;border-radius:0;background:none;box-shadow:none;animation:none}
