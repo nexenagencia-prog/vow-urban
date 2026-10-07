@@ -341,3 +341,10 @@
   #planos .section-heading h2{font-size:clamp(30px,9.4vw,37px);line-height:1.08;text-wrap:balance}
   #planos .section-heading h2 br{display:none}
 }
+
+
+/* O título do processo permanece em duas linhas em todas as telas. */
+.rider-steps-heading{max-width:100%}
+.rider-steps-heading h2{max-width:none;font-size:clamp(36px,4vw,50px);line-height:1.04}
+.rider-title-line{display:block;white-space:nowrap}
+@media(max-width:640px){.rider-steps-heading h2{font-size:clamp(20px,6.7vw,31px);line-height:1.08}.rider-steps-heading{max-width:100%}}
