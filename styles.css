@@ -291,3 +291,25 @@
 @media(max-width:640px){.hero-route-label{font-size:7px}.hero-route-label i{font-size:6px}.hero-route-line .hero-route-destination{right:18px;font-size:7px}}
 @media(prefers-reduced-motion:reduce){.hero-route-line .hero-route-dot{animation:none;left:50%}}
 .hero-route-line .hero-route-destination{left:auto;width:auto;height:auto;border-radius:0;background:none;box-shadow:none;animation:none}
+
+/* Copy sem chamada de compra; foco em adequação ao momento e flexibilidade. */
+.drive-content h2{max-width:10ch}
+.drive-description{max-width:37ch}
+.drive-content .button{display:none}
+.rider-steps-heading h2{max-width:15ch;margin-inline:auto}
+@media(max-width:900px){.rider-steps-heading h2{max-width:17ch}.drive-content h2{max-width:12ch}}
+@media(max-width:640px){
+ .hero-route{top:80px;right:20px}
+ .hero-route-label{gap:7px;letter-spacing:.13em}
+ .hero-route-label i{letter-spacing:.09em}
+ .hero-route-line{bottom:28px}
+ .hero-route-line .hero-route-destination{right:16px}
+ .hero-pills{bottom:55px;gap:0}
+ .hero-pills span{padding:11px 6px;font-size:6.5px;letter-spacing:.045em}
+ .drive-banner,.drive-banner-inner{min-height:700px}
+ .drive-banner-inner{padding-top:342px;padding-bottom:54px}
+ .drive-content h2{max-width:12ch;font-size:clamp(39px,10.5vw,46px);line-height:1.02}
+ .drive-description{max-width:36ch;font-size:13px;line-height:1.7}
+ .rider-steps-heading h2{max-width:13ch;font-size:clamp(36px,9.4vw,42px);line-height:1.04}
+ .rider-steps-heading>p:last-child{max-width:34ch;margin-inline:auto}
+}
