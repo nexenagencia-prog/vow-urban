@@ -313,3 +313,7 @@
  .rider-steps-heading h2{max-width:13ch;font-size:clamp(36px,9.4vw,42px);line-height:1.04}
  .rider-steps-heading>p:last-child{max-width:34ch;margin-inline:auto}
 }
+@media(max-width:640px){
+ .hero-pills span{padding:10px 5px;font-size:7.5px;letter-spacing:.035em}
+ .rider-steps-heading h2{max-width:18ch}
+}
