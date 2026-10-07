@@ -203,13 +203,13 @@
 .drive-content h2{font-size:clamp(48px,5.4vw,72px);line-height:.98;letter-spacing:-.06em;margin:0 0 22px}
 .drive-description{max-width:390px;color:#b9c5ca;font-size:14px;line-height:1.8;margin:0}
 .drive-content .button{margin-top:30px}
-.drive-map{position:relative;min-width:0;margin:0;aspect-ratio:1.35;overflow:hidden;border:1px solid rgba(37,220,231,.2);border-radius:18px;background:#08111a;box-shadow:0 28px 80px rgba(0,0,0,.36),0 0 48px rgba(21,145,164,.08)}
-.drive-map:after{content:"";position:absolute;inset:55% 0 0;background:linear-gradient(0deg,rgba(4,10,15,.72),transparent);pointer-events:none}
-.drive-map img{display:block;width:100%;height:100%;object-fit:cover;object-position:center}
-.drive-map figcaption{position:absolute;z-index:1;left:20px;bottom:18px;display:flex;align-items:center;gap:10px;padding:11px 14px;border:1px solid rgba(206,234,240,.16);border-radius:999px;background:rgba(5,13,19,.62);backdrop-filter:blur(12px);color:#dce8eb;font-size:10px;letter-spacing:.045em}
+.drive-visual{position:relative;min-width:0;margin:0;aspect-ratio:1.35;overflow:hidden;border:1px solid rgba(37,220,231,.2);border-radius:18px;background:#08111a;box-shadow:0 28px 80px rgba(0,0,0,.36),0 0 48px rgba(21,145,164,.08)}
+.drive-visual:after{content:"";position:absolute;inset:55% 0 0;background:linear-gradient(0deg,rgba(4,10,15,.72),transparent);pointer-events:none}
+.drive-visual img{display:block;width:100%;height:100%;object-fit:cover;object-position:center}
+.drive-visual figcaption{position:absolute;z-index:1;left:20px;bottom:18px;display:flex;align-items:center;gap:10px;padding:11px 14px;border:1px solid rgba(206,234,240,.16);border-radius:999px;background:rgba(5,13,19,.62);backdrop-filter:blur(12px);color:#dce8eb;font-size:10px;letter-spacing:.045em}
 .map-route-dot{width:7px;height:7px;border-radius:50%;background:var(--cyan);box-shadow:0 0 12px var(--cyan)}
-@media(max-width:900px){.approval-toast-layer{right:14vw;top:36%;width:min(280px,28vw)}.drive-banner{min-height:0;padding:92px 0}.drive-banner-inner{grid-template-columns:1fr;gap:38px;min-height:0}.drive-content{max-width:620px}.drive-map{width:100%;aspect-ratio:1.55}}
-@media(max-width:640px){.hero-pills{background:rgba(8,15,21,.24);backdrop-filter:blur(13px)}.approval-toast-layer{right:auto;top:auto;width:auto}.approval-notification{padding:14px 15px 15px;border-radius:15px}.approval-notification h3{font-size:13px}.approval-notification p{font-size:10px}.notification-app-icon{width:26px;height:26px}.notification-app-icon svg{width:20px;height:20px}.drive-banner{padding:76px 0 82px}.drive-banner-inner{width:calc(100% - 40px);gap:30px}.drive-content h2{font-size:48px}.drive-description{font-size:13px}.drive-map{aspect-ratio:1.12;border-radius:14px}.drive-map figcaption{left:12px;bottom:12px;font-size:8px;padding:9px 11px}}
+@media(max-width:900px){.approval-toast-layer{right:14vw;top:36%;width:min(280px,28vw)}.drive-banner{min-height:0;padding:92px 0}.drive-banner-inner{grid-template-columns:1fr;gap:38px;min-height:0}.drive-content{max-width:620px}.drive-visual{width:100%;aspect-ratio:1.55}}
+@media(max-width:640px){.hero-pills{background:rgba(8,15,21,.24);backdrop-filter:blur(13px)}.approval-toast-layer{right:auto;top:auto;width:auto}.approval-notification{padding:14px 15px 15px;border-radius:15px}.approval-notification h3{font-size:13px}.approval-notification p{font-size:10px}.notification-app-icon{width:26px;height:26px}.notification-app-icon svg{width:20px;height:20px}.drive-banner{padding:76px 0 82px}.drive-banner-inner{width:calc(100% - 40px);gap:30px}.drive-content h2{font-size:48px}.drive-description{font-size:13px}.drive-visual{aspect-ratio:1.12;border-radius:14px}.drive-visual figcaption{left:12px;bottom:12px;font-size:8px;padding:9px 11px}}
 
 /* Direção visual inspirada nas referências: luz e rota sutis, sem novos cards. */
 .hero{isolation:isolate}
@@ -236,11 +236,11 @@
 .drive-content h2{font-size:clamp(50px,5.4vw,74px);line-height:.98;letter-spacing:-.065em;margin:0 0 23px}
 .drive-description{max-width:390px;font-size:14px;line-height:1.8;color:#bdc9cd}
 .drive-content .button{margin-top:30px}
-.drive-map{position:absolute;z-index:1;top:0;right:0;bottom:0;width:min(76vw,1280px);height:100%;margin:0;overflow:hidden;border:0;border-radius:0;background:none;box-shadow:none;mask-image:linear-gradient(90deg,transparent 0%,rgba(0,0,0,.35) 8%,#000 23%,#000 91%,transparent 100%);-webkit-mask-image:linear-gradient(90deg,transparent 0%,rgba(0,0,0,.35) 8%,#000 23%,#000 91%,transparent 100%)}
-.drive-map:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,#060c11 0%,rgba(6,12,17,.68) 17%,transparent 47%),linear-gradient(0deg,rgba(5,10,14,.7),transparent 24%,transparent 79%,rgba(5,10,14,.44));pointer-events:none}
-.drive-map img{width:100%;height:100%;object-fit:cover;object-position:center 52%;opacity:.88;filter:saturate(.82) contrast(1.04)}
-.drive-map figcaption{display:none}
-@media(max-width:900px){.drive-banner,.drive-banner-inner{min-height:690px}.drive-banner-inner{padding-inline:6vw}.drive-map{width:78vw}.drive-content{max-width:410px}.drive-map img{object-position:56% center}}
+.drive-visual{position:absolute;z-index:1;top:0;right:0;bottom:0;width:min(76vw,1280px);height:100%;margin:0;overflow:hidden;border:0;border-radius:0;background:none;box-shadow:none;mask-image:linear-gradient(90deg,transparent 0%,rgba(0,0,0,.35) 8%,#000 23%,#000 91%,transparent 100%);-webkit-mask-image:linear-gradient(90deg,transparent 0%,rgba(0,0,0,.35) 8%,#000 23%,#000 91%,transparent 100%)}
+.drive-visual:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,#060c11 0%,rgba(6,12,17,.68) 17%,transparent 47%),linear-gradient(0deg,rgba(5,10,14,.7),transparent 24%,transparent 79%,rgba(5,10,14,.44));pointer-events:none}
+.drive-visual img{width:100%;height:100%;object-fit:cover;object-position:center 52%;opacity:.88;filter:saturate(.82) contrast(1.04)}
+.drive-visual figcaption{display:none}
+@media(max-width:900px){.drive-banner,.drive-banner-inner{min-height:690px}.drive-banner-inner{padding-inline:6vw}.drive-visual{width:78vw}.drive-content{max-width:410px}.drive-visual img{object-position:56% center}}
 @media(max-width:640px){
  .hero-route{left:27%;top:28%;width:71%;height:46%;opacity:.38}
  .hero-route-label{display:none}.hero-route-data{right:4%;bottom:0}.hero-route-data strong{font-size:16px}.hero-route-data i{font-size:6px}
@@ -248,9 +248,37 @@
  .drive-banner,.drive-banner-inner{min-height:680px}
  .drive-banner:before{background:linear-gradient(180deg,rgba(6,12,17,.12),rgba(6,12,17,.3) 28%,#060c11 54%,#060c11 100%)}
  .drive-banner-inner{align-items:flex-end;padding:335px 22px 66px}
- .drive-map{top:0;left:0;right:0;width:100%;height:390px;mask-image:linear-gradient(180deg,#000 0%,#000 55%,transparent 100%);-webkit-mask-image:linear-gradient(180deg,#000 0%,#000 55%,transparent 100%)}
- .drive-map:after{background:linear-gradient(180deg,transparent 40%,rgba(6,12,17,.32) 70%,#060c11 100%)}
- .drive-map img{object-position:center 52%;opacity:.85}
+ .drive-visual{top:0;left:0;right:0;width:100%;height:390px;mask-image:linear-gradient(180deg,#000 0%,#000 55%,transparent 100%);-webkit-mask-image:linear-gradient(180deg,#000 0%,#000 55%,transparent 100%)}
+ .drive-visual:after{background:linear-gradient(180deg,transparent 40%,rgba(6,12,17,.32) 70%,#060c11 100%)}
+ .drive-visual img{object-position:center 52%;opacity:.85}
  .drive-content{max-width:100%}.drive-content h2{font-size:48px}.drive-description{font-size:13px}
 }
 @media(prefers-reduced-motion:reduce){.hero-route-trace{animation:none}}
+
+/* A rota fica identificada; o movimento passa para uma linha reta no rodapé. */
+.hero-route{position:absolute;z-index:1;left:auto;right:9%;top:17%;width:auto;height:auto;pointer-events:none;opacity:1}
+.hero-route-label{position:relative;top:auto;right:auto;display:flex;align-items:center;gap:12px;padding-left:11px;border-left:1px solid rgba(37,220,231,.75);font-size:8px;letter-spacing:.19em;color:rgba(230,244,246,.74)}
+.hero-route-label i{font-style:normal;color:rgba(210,226,230,.5);font-size:7px;letter-spacing:.12em}
+.hero-route-line{position:absolute;z-index:1;left:0;right:0;bottom:53px;height:1px;pointer-events:none;background:linear-gradient(90deg,rgba(37,220,231,.12),rgba(37,220,231,.48) 48%,rgba(37,220,231,.2));box-shadow:0 0 12px rgba(37,220,231,.16)}
+.hero-route-line span{position:absolute;top:50%;left:0;width:8px;height:8px;border-radius:50%;background:#70f4ff;box-shadow:0 0 8px #25dce7,0 0 20px rgba(37,220,231,.8);transform:translateY(-50%);animation:hero-line-travel 28s linear infinite,hero-line-pulse 2.4s ease-in-out infinite}
+@keyframes hero-line-travel{from{left:0}to{left:calc(100% - 8px)}}
+@keyframes hero-line-pulse{0%,100%{opacity:.65;box-shadow:0 0 6px #25dce7,0 0 15px rgba(37,220,231,.65)}50%{opacity:1;box-shadow:0 0 10px #70f4ff,0 0 25px rgba(37,220,231,.95)}}
+.hero-pills{border-radius:2px}
+.hero-pills span{border-radius:0}
+.hero-route-data,.hero-route svg{display:none}
+
+/* Fotografia limpa na seção: pessoa e scooter em sangria, sem moldura. */
+.drive-visual{width:min(76vw,1280px);mask-image:linear-gradient(90deg,transparent 0%,rgba(0,0,0,.35) 8%,#000 23%,#000 91%,transparent 100%);-webkit-mask-image:linear-gradient(90deg,transparent 0%,rgba(0,0,0,.35) 8%,#000 23%,#000 91%,transparent 100%)}
+.drive-visual:after{background:linear-gradient(90deg,#060c11 0%,rgba(6,12,17,.62) 17%,transparent 47%),linear-gradient(0deg,rgba(5,10,14,.56),transparent 26%,transparent 79%,rgba(5,10,14,.36))}
+.drive-visual img{object-position:68% center;opacity:.83;filter:saturate(.76) contrast(1.04)}
+@media(max-width:900px){.drive-visual{width:78vw}.drive-visual img{object-position:68% center}}
+@media(max-width:640px){
+ .hero-route{right:8%;top:20%}.hero-route-label{font-size:7px}.hero-route-line{bottom:53px}
+ .hero-pills{border-radius:2px}
+ .drive-banner:before{background:linear-gradient(180deg,rgba(6,12,17,.08),rgba(6,12,17,.22) 28%,#060c11 54%,#060c11 100%)}
+ .drive-visual{top:0;left:0;right:0;width:100%;height:390px;mask-image:linear-gradient(180deg,#000 0%,#000 55%,transparent 100%);-webkit-mask-image:linear-gradient(180deg,#000 0%,#000 55%,transparent 100%)}
+ .drive-visual:after{background:linear-gradient(180deg,transparent 36%,rgba(6,12,17,.28) 65%,#060c11 100%)}
+ .drive-visual img{object-position:70% center;opacity:.82}
+ .drive-content h2{font-size:clamp(42px,11vw,48px)}
+}
+@media(prefers-reduced-motion:reduce){.hero-route-line span{animation:none;left:50%}}
