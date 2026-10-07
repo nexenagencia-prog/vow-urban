@@ -29,7 +29,7 @@ if (featureCards.length && !reduceMotion && 'IntersectionObserver' in window) {
         observer.unobserve(entry.target);
       }
     });
-  }, { threshold: 0.15, rootMargin: '0px 0px -24px 0px' });
+  }, { threshold: 0.12, rootMargin: '0px 0px -12% 0px' });
 
   featureCards.forEach((card) => cardObserver.observe(card));
 }
