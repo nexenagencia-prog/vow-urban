@@ -133,3 +133,50 @@
 .approval-notification p strong{color:#f2f7f8;font-weight:600}
 @media(max-width:900px) and (min-width:641px){.approval-main{width:46vw}.approval-main h2{font-size:clamp(40px,4.5vw,52px)}.approval-toast-layer{top:35%;width:36vw}.approval-notification{padding:15px}.approval-notification h3{font-size:13px}}
 @media(max-width:640px){.approval-main h2{font-size:39px}.approval-toast-layer{top:auto;width:auto}.approval-notification{padding:16px;border-radius:15px}.approval-notification h3{font-size:13px}.approval-notification p{font-size:10px}}
+
+/* Hero: refinamento discreto de hierarquia e contraste. */
+.hero-content{max-width:690px;padding-top:clamp(0px,3vh,30px)}
+.hero-content .eyebrow{display:flex;align-items:center;gap:11px;margin-bottom:22px;color:rgba(37,220,231,.88);font-size:9px;letter-spacing:.2em}
+.hero-content .eyebrow:before{content:"";width:24px;height:1px;background:var(--cyan);opacity:.8}
+.hero h1{max-width:700px;font-size:clamp(48px,5.7vw,76px);line-height:1;letter-spacing:-.06em}
+.hero-sub{max-width:445px;font-size:10px;line-height:1.7;color:#d3dce0}
+.button-dark{background:rgba(8,15,21,.68);border-color:rgba(225,241,246,.25);backdrop-filter:blur(10px)}
+.hero-pills{border-radius:999px;overflow:hidden;background:rgba(8,15,21,.42);border-color:rgba(220,237,243,.2)}
+.hero-pills span{padding:15px 22px;font-size:8px;letter-spacing:.12em}
+@media(max-width:640px){.hero-content{padding-top:0}.hero-content .eyebrow{display:flex;margin-bottom:17px;font-size:8px}.hero h1{font-size:clamp(46px,12vw,64px);line-height:.99}.hero-sub{font-size:9px;line-height:1.6}.hero-pills{border-radius:2px}.hero-pills span{padding:12px 7px;font-size:7px}}
+
+/* A aprovação vem antes do showcase da scooter. */
+.approval-toast-layer{right:clamp(150px,17vw,320px);top:34%;width:min(440px,35vw)}
+.approval-notification{padding:21px 23px 23px;border-radius:20px;background:rgba(9,18,24,.9);border-color:rgba(222,240,244,.24);box-shadow:0 22px 64px rgba(0,0,0,.4),0 0 36px rgba(37,220,231,.09)}
+.approval-notification:after{left:38px;bottom:-8px;width:15px;height:15px;background:#0a151b}
+.notification-top{gap:11px;margin-bottom:16px}
+.notification-app-icon{position:relative;width:34px;height:34px;border-radius:11px;background:#25d366}
+.notification-app-icon:before{content:"";position:absolute;left:9px;top:8px;width:14px;height:12px;border:1.7px solid #fff;border-radius:50%}
+.notification-app-icon:after{content:"";position:absolute;left:10px;top:18px;width:5px;height:5px;background:#25d366;border-left:1.7px solid #fff;transform:skew(-24deg) rotate(-28deg)}
+.notification-app-name{font-size:10px;letter-spacing:.08em;color:#d5e2e5}
+.approval-notification h3{font-size:17px;margin-bottom:8px}
+.approval-notification p{font-size:12px;line-height:1.65}
+@media(max-width:900px) and (min-width:641px){.approval-toast-layer{right:14vw;top:36%;width:40vw}}
+@media(max-width:640px){.approval-toast-layer{right:auto;top:auto}.approval-notification{padding:17px;border-radius:16px}.approval-notification h3{font-size:14px}.approval-notification p{font-size:10px}.notification-app-icon{width:30px;height:30px}}
+
+/* Showcase com composição editorial e detalhes técnicos alinhados. */
+.scooter-showcase{position:relative;isolation:isolate;width:100%;max-width:none;margin:0;padding:112px 0 124px;background:radial-gradient(ellipse at 15% 45%,rgba(15,75,96,.16),transparent 43%),linear-gradient(180deg,#070d12,#05090d 78%);border-bottom:1px solid var(--line)}
+.scooter-showcase-inner{position:relative}
+.scooter-section-heading{display:flex;justify-content:space-between;align-items:end;gap:60px;margin-bottom:46px;padding-bottom:26px;border-bottom:1px solid var(--line)}
+.scooter-section-heading .eyebrow{margin-bottom:15px}
+.scooter-section-heading h2{font-family:'Manrope','DM Sans',sans-serif;font-size:clamp(42px,5vw,64px);font-weight:300;letter-spacing:-.06em;line-height:.98;margin:0}
+.scooter-section-heading>p{max-width:380px;margin:0 0 3px;color:#aebbc1;font-size:13px;line-height:1.7}
+.scooter-showcase-grid{display:grid;grid-template-columns:1.12fr .88fr;gap:clamp(32px,5vw,72px);align-items:center}
+.scooter-video{min-height:580px;border-radius:4px;box-shadow:0 22px 62px rgba(0,0,0,.32)}
+.scooter-video:before{content:"";position:absolute;z-index:1;inset:0;border:1px solid rgba(213,235,241,.1);pointer-events:none}
+.scooter-video span{left:24px;bottom:22px;padding:9px 12px;background:rgba(5,12,17,.58);border:1px solid rgba(223,241,246,.2);backdrop-filter:blur(8px);font-size:8px;letter-spacing:.14em}
+.scooter-details{padding:5px 0 5px 30px;border-left:1px solid rgba(37,220,231,.3)}
+.scooter-panel-label{margin:0 0 18px;color:var(--cyan);font-size:9px;font-weight:600;letter-spacing:.18em}
+.spec-grid{grid-template-columns:1fr;gap:0;border-top:1px solid var(--line)}
+.spec-grid article,.spec-grid article:last-child{min-height:0;grid-column:auto;padding:20px 0;background:transparent;border:0;border-bottom:1px solid var(--line);display:grid;grid-template-columns:minmax(112px,.55fr) 1fr;gap:16px;align-items:center}
+.spec-grid span{font-size:8px;line-height:1.5;letter-spacing:.13em;color:#91a2aa}
+.spec-grid strong{font-family:'Manrope','DM Sans',sans-serif;font-size:15px;font-weight:500;line-height:1.35}
+.spec-note{max-width:360px;font-size:10px;line-height:1.6;color:#89969c;margin:17px 0 0}
+.scooter-cta{margin-top:25px}
+@media(max-width:900px){.scooter-showcase{padding-block:92px}.scooter-section-heading{gap:32px}.scooter-showcase-grid{gap:26px}.scooter-video{min-height:480px}.scooter-details{padding-left:20px}.spec-grid article,.spec-grid article:last-child{grid-template-columns:1fr;gap:7px}}
+@media(max-width:640px){.scooter-showcase{padding-block:76px}.scooter-section-heading{display:block;margin-bottom:25px;padding-bottom:22px}.scooter-section-heading h2{font-size:43px}.scooter-section-heading>p{font-size:12px;margin-top:14px}.scooter-showcase-grid{grid-template-columns:1fr;gap:24px}.scooter-video{min-height:360px;grid-row:1}.scooter-details{grid-row:2;padding:0;border:0}.scooter-panel-label{margin-bottom:12px}.spec-grid article,.spec-grid article:last-child{grid-template-columns:120px 1fr;gap:12px;padding:16px 0}.spec-grid strong{font-size:14px}}
