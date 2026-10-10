@@ -348,3 +348,8 @@
 .rider-steps-heading h2{max-width:none;font-size:clamp(36px,4vw,50px);line-height:1.04}
 .rider-title-line{display:block;white-space:nowrap}
 @media(max-width:640px){.rider-steps-heading h2{font-size:clamp(20px,6.7vw,31px);line-height:1.08}.rider-steps-heading{max-width:100%}}
+
+
+/* No mobile, a seta da Hero usa o mesmo ícone vetorial do restante do site. */
+.hero-arrow-icon{display:none;width:17px;height:17px;flex:none;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+@media(max-width:640px){.hero .button-dark .hero-arrow-glyph{display:none}.hero .button-dark .hero-arrow-icon{display:block}}
