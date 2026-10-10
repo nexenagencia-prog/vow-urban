@@ -350,6 +350,10 @@
 @media(max-width:640px){.rider-steps-heading h2{font-size:clamp(20px,6.7vw,31px);line-height:1.08}.rider-steps-heading{max-width:100%}}
 
 
-/* No mobile, a seta da Hero usa o mesmo ícone vetorial do restante do site. */
-.hero-arrow-icon{display:none;width:17px;height:17px;flex:none;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
-@media(max-width:640px){.hero .button-dark .hero-arrow-glyph{display:none}.hero .button-dark .hero-arrow-icon{display:block}}
+
+/* Ícones vetoriais consistentes para botões, links e status. */
+.ui-icon{display:inline-block;width:16px;height:16px;flex:none;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round;vertical-align:middle}
+.step-link .ui-icon{color:var(--cyan);transition:transform .2s}
+.back-top{display:inline-flex;align-items:center;gap:7px}
+.toast-meta i{display:inline-flex;align-items:center;vertical-align:middle;margin-left:5px}
+.toast-meta .ui-icon{width:13px;height:13px;stroke-width:2}
